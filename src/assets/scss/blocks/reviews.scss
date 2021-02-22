@@ -1,0 +1,83 @@
+.reviews {
+  margin-bottom: 14rem;
+
+  @include breakpoint($tablet) {
+    margin-bottom: 5rem;
+  }
+
+  @include breakpoint($phone) {
+    margin-bottom: 2rem;
+  }
+}
+
+.rev__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1px;
+  box-shadow: 0 0 27px 0 rgba(20, 20, 21, 0.09);
+  padding: 1rem 4rem 3.8rem;
+  transition: box-shadow .2s linear;
+  margin-top: 10.5rem;
+
+  &:hover {
+    box-shadow: 0 0 1px 0 rgba(20, 20, 21, 0.75);
+  }
+
+  @include breakpoint($desktop) {
+    padding: 1rem 5rem 2.8rem;
+  }
+}
+
+.rev__card-avatar {
+  position: relative;
+  top: -60px;
+  max-width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.rev__card-text {
+  text-align: center;
+  color: rgba(0, 0, 0, 0.7);
+  font-size: 1.7rem;
+  line-height: 1.5;
+
+  @include breakpoint($phone) {
+    font-size: 1.4rem;
+  }
+}
+
+.rev__card-rating {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.9rem;
+  margin-bottom: 2.2rem;
+}
+
+.ratings__star {
+  width: 12px;
+  height: 12px;
+}
+
+.rev__card-author {
+  display: flex;
+  text-align: center;
+  font-size: 1.7rem;
+  font-family: Source Sans Pro;
+  
+  @include breakpoint($phone) {
+    font-size: 1.4rem;
+  }
+}
+
+.author__name {
+  font-weight: 600;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.author__prof {
+  font-weight: 400;
+  color: rgba(0, 0, 0, 0.8);
+}

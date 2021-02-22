@@ -1,0 +1,128 @@
+.page__title {
+  font-size: 5rem;
+  color: rgba(0, 0, 0, 0.8);
+  opacity: 0.8;
+  text-align: center;
+  margin-top: 14rem;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+
+  @include breakpoint($desktop) {
+    margin-top: 11rem;
+    margin-bottom: 1.5rem;
+    font-size: 4.5rem;
+  }
+
+  @include breakpoint($tablet) {
+    margin-top: 7rem;
+    margin-bottom: 1.5rem;
+    padding: 0rem 5rem 0rem;
+    font-size: 4.3rem;
+  }
+
+  @include breakpoint($phone) {
+    padding: 0rem 2.5rem 0rem;
+    font-size: 3.5rem;
+  }
+
+  @include breakpoint($iphone-5) {
+    padding: 0rem 2rem 0rem;
+  }
+}
+
+.page__subtitle {
+  opacity: 0.7;
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 12.5rem;
+
+  @include breakpoint($desktop) {
+    padding: 0rem 12rem 5.5rem;
+    margin-bottom: -1.5rem;
+  }
+
+  @include breakpoint($tablet) {
+    padding: 0rem 5rem 3.5rem;
+    font-size: 1.4rem;
+  }
+
+  @include breakpoint($phone) {
+    padding: 0rem 3rem 3.4rem;
+    font-size: 1.3rem;
+  }
+}
+
+.page__item-btn {
+  display: flex;
+  width: 22.8rem;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem 2rem;
+  border-radius: 27px;
+  position: absolute;
+  bottom: -25px;
+  box-shadow: 0 0 14px 0 rgba(20, 20, 21, 0.05);
+  border: none;
+  background-color: $white;
+  transition: box-shadow .2s linear;
+
+  &--service {
+    position: static;
+    margin-top: 12rem;
+
+    @include breakpoint($desktop) {
+      margin-top: 8rem;
+    }
+
+    @include breakpoint($tablet) {
+      margin-top: 7rem;
+      width: 18rem;
+    }
+
+    @include breakpoint($phone) {
+      margin-top: 8rem;
+      padding: 1.4rem 1.9rem;
+    }
+  }
+
+  &--footer {
+    margin-top: 0;
+    position: static;
+  }
+
+  &:hover {
+    box-shadow: 1px 5.9px 14px 0 rgba(20, 20, 21, 0.09);
+  }
+
+  img {
+    height: 16px;
+    width: 16px;
+    margin-right: 1.7rem;
+    max-height: 100%;
+    object-fit: cover;
+
+    @include breakpoint($iphone-5) {
+      height: 14px;
+      width: 14px;
+    }
+  }
+
+  @include breakpoint($phone) {
+    width: 18rem;
+  }
+
+  @include breakpoint($iphone-5) {
+    width: 17.8rem;
+    padding: 1.5rem 3rem;
+  }
+}
+
+.page__text {
+  font-size: 1.6rem;
+  opacity: 0.8;
+  text-align: center;
+
+  @include breakpoint($iphone-5) {
+    font-size: 1.5rem;
+  }
+}

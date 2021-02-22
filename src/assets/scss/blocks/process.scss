@@ -1,0 +1,75 @@
+.process__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 15.7rem;
+
+  @include breakpoint($desktop) {
+    margin-bottom: 10.7rem;
+    margin: 0 auto;
+  }
+  
+  @include breakpoint($tablet) {
+    
+  }
+  
+  @include breakpoint($phone) {
+    
+  }
+  
+  @include breakpoint($iphone-5) {
+    
+  }
+}
+
+.process__item {
+  position: relative;
+  padding: 5.3rem 4.3rem 5.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 26rem;
+  height: auto;
+  transition: box-shadow .2s linear;
+
+  &:hover {
+    box-shadow: 0 0 35px 0 rgba(20, 20, 21, 0.21);
+  }
+
+  @include breakpoint($desktop) {
+    margin-top: 6rem;
+    margin-left: 4rem;
+    margin-right: 4rem;
+  }
+
+  @include breakpoint($iphone-5) {
+    padding: 3rem 2.3rem 4.5rem;
+  }
+}
+
+.process__item-img {
+  width: 43px;
+  height: 43px;
+  margin-bottom: 2.3rem;
+
+  img {
+    max-width: 100%;
+    object-fit: cover;
+  }
+}
+
+.process__item-title {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2.4rem;
+}
+
+.process__item-text {
+  opacity: 0.75;
+  font-size: 1.5rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.75);
+  line-height: 1.3;
+}
